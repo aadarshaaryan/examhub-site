@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 500px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius:8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+#timer {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.quiz-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option-btn:hover {
+    background: #e3e3e3;
+}
+
+#nextBtn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    background: #0056b3;
+}
+
+/* 📱 Mobile Adjustment */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    #question {
+        font-size: 16px;
+    }
+}
+
+.start-screen {
+    text-align: center;
+}
+
+.start-screen button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.start-screen button:hover {
+    background: #0056b3;
+}
+#question-number-display{
+    transform: translateY(10px);
+}
+
+.question-number-display-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::selection{
+    background-color: black;
+    color: yellow;
+}

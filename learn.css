@@ -1,0 +1,369 @@
+/*----------------------------------------------------NAV------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav .topnav a,
+nav .bottomnav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav .topnav li:first-child {
+    margin-right: auto;
+}
+
+nav .topnav li:last-child {
+    margin-left: auto;
+}
+
+nav input {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 51px;
+    width: 325px;
+    font-size: 16px;
+    padding: 0 50px 0 16px;
+    background-color: rgb(0 255 137);
+    z-index: 1001;
+}
+
+nav input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.bottomnav {
+    background: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.bottomnavOnMobile {
+    display: none;
+}
+
+.bg,
+.bg-2 {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 0 6px 10px;
+    border-radius: 8px;
+    background: transparent;
+    transition: padding-right 0.35s ease;
+}
+
+.bg-2 {
+    color: black;
+}
+
+.icon,
+.text2 {
+    margin-left: 8px;
+    transform: translateX(-15px);
+    opacity: 0;
+    transition: all 0.35s ease;
+}
+
+.menu-item:hover .bg {
+    background: blue;
+    color: white;
+}
+
+.menu-item:hover .bg,
+.menu-item:hover .bg-2 {
+    padding-right: 32px;
+}
+
+.menu-item:hover .icon,
+.menu-item:hover .text2 {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.1s;
+    margin-left: 26px;
+}
+
+.Img-icon,
+.profile-2 img {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.profile {
+    background-color: blue;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.Img-search-icon {
+    position: absolute;
+    top: 11px;
+    right: 18px;
+    z-index: 1002;
+}
+
+.logo-bg {
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 390px) {
+    nav input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .bottomnavOnMobile {
+        display: block;
+    }
+
+    nav .bottomnav a {
+        padding: 0 25px;
+    }
+}
+
+/*-------------------------------------------------------NAV-----------------------------------------------------*/
+
+.learnCards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 274px));
+    gap: 40px;
+    padding: 80px 40px 150px 40px;
+    justify-content: center;
+    align-items: start;
+}
+
+.learnCards {
+    height: 460px;
+    width: 100%;
+    background-color: rgb(0 255 137);
+    position: relative;
+    border: 1px solid rgb(0 255 137);
+    box-shadow: 0 0 30px gray;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.learnCards:hover {
+    box-shadow: 0 0 0 gray;
+}
+
+.learnCards h3 {
+    text-align: center;
+}
+
+.card-part-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card-part-1 img {
+    width: 150px;
+}
+
+.card-part-2 {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-part-3 {
+    position: relative;
+    margin-top: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-part-3 button {
+    background-color: blue;
+    border: none;
+    color: white;
+    height: 48px;
+    width: 205px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    z-index: 20;
+}
+
+.option-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 205px;
+    color: white;
+}
+
+.answer {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(rgb(4, 0, 110), rgb(57, 50, 255));
+    height: 0;
+    width: 100%;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.answer-o{
+    padding: 10px;
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
+    border-bottom: 1px solid rgba(0, 197, 197, 0.4);
+}
+
+#section-1 {
+    min-height: 65vh;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+#section-1 img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+#section-1 ol {
+    margin: 20px;
+}
+
+.section-1-img {
+    height: 350px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(350px);
+    opacity: 0;
+    animation: graduate 2.5s linear forwards;
+}
+
+.p1 {
+    font-weight: bolder;
+    position: relative;
+    transform: translateX(-220px);
+    opacity: 0;
+    animation: paras 1s linear forwards;
+}
+
+@keyframes graduate {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes paras {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 950px) {
+    #section-1 img {
+        display: none;
+    }
+
+    #section-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 504px) {
+    .section-1-img {
+        width: 100%;
+        height: auto;
+        transform: translateY(100%);
+    }
+}
+
+
+.answer a{
+    color: white;
+    text-decoration: none;
+}
+
+body::selection{
+    background-color: black;
+    color: yellow;
+}

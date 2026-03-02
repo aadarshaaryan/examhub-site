@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav">
+            <li>
+                <div class="menu-item">
+                    <span class="bg-2">
+                        <span class="icon-2">
+                            <div class="logo-bg"><img class="Img-icon" src="Group 1.svg"></div>
+                        </span>
+                        <span class="text2">ExamHub</span>
+                    </span>
+                </div>
+            </li>
+
+            <li class="hideOnMobile"><a href="index.html">
+                    <div class="menu-item">
+                        <span class="bg">
+                            <span class="text">Home</span>
+                            <span class="icon"><img class="Img-icon" src="home-button.png"></span>
+                        </span>
+                    </div>
+                </a></li>
+
+            <li class="hideOnMobile"><a href="learn.html">
+                    <div class="menu-item">
+                        <span class="bg">
+                            <span class="text">Learn</span>
+                            <span class="icon"><img class="Img-icon" src="graduation.png"></span>
+                        </span>
+                    </div>
+                </a></li>
+
+            <li class="hideOnMobile"><a href="#">
+                    <div class="menu-item">
+                        <span class="bg">
+                            <span class="text">Chat</span>
+                            <span class="icon"><img class="Img-icon" src="chat.png"></span>
+                        </span>
+                    </div>
+                </a></li>
+
+            <li class="hideOnMobile"><a href="#">
+                    <div class="profile">
+                        <span class="profile-1">Community</span>
+                        <span class="profile-2"><img class="Img-icon" src="user.png"></span>
+                    </div>
+                </a></li>
+            <li>
+                <input id="search-input" placeholder="search" type="text">
+                <img id="search-icon" class="Img-icon Img-search-icon" src="search.png">
+            </li>
+        </ul>
+        <ul class="bottomnav">
+            <li class="bottomnavOnMobile"><a href="index.html"><img class="Img-icon" src="home-button.png"></a></li>
+            <li class="bottomnavOnMobile"><a href="learn.html"><img class="Img-icon" src="graduation.png"></a></li>
+            <li class="bottomnavOnMobile"><a href="#"><img class="Img-icon" src="chat.png"></a></li>
+            <li class="bottomnavOnMobile"><a href="#"><img class="Img-icon" src="user.png"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section-1">
+            <div class="para-1-div">
+                <p class="p1 p1-a">Step into ExamHub - your ultimate learning hub for the exam you're targetting. </p>
+                <p class="p1 p1-b"> Explore syllabus | Subject-wise | Mixed mock tests | Exam pattern </p>
+                <p class="p1 p1-c"> Start today and be exam-ready!</p>
+                <a href="learn.html"> <button class="p1 p1-c">Select Your Exam Name</button></a>
+            </div>
+            <div>
+                <img class="section-1-img" src="graduate-section-1-removebg-preview.png">
+            </div>
+        </section>
+        <section id="section2">
+            <div class="note">
+                <p><strong>Note:</strong> This website is newly launched, and some features may not be fully functional
+                    yet. We are actively working to improve and add new features. If you have any suggestions or
+                    feedback on what you’d like to see implemented soon, please share them with us <b>here</b>.</p>
+            </div>
+            <div class="feedback">
+                <form id="feedbackForm">
+    <h3>We value your feedback</h3>
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Type your feedback here..." required></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+<p id="thankYouMessage">Thanks for submitting your feedback!... Refresh to submit another feedback </p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
