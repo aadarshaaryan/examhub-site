@@ -4,7 +4,7 @@
 }
 
 body {
-    min-height: 100vh ;
+    min-height: 100vh;
     min-width: 100vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -151,7 +151,6 @@ nav input::placeholder {
 }
 
 .logo-bg {
-    background-color: black;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -334,14 +333,15 @@ nav input::placeholder {
 
 /* ===== Feedback Form Styling ===== */
 #feedbackForm {
-    box-sizing: border-box;        /* Include padding & border in width */
+    box-sizing: border-box;
+    /* Include padding & border in width */
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
     background: #f4f6f9;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #feedbackForm h3 {
@@ -396,11 +396,28 @@ nav input::placeholder {
     font-size: 16px;
 }
 
-.feedback{
+.feedback {
     margin: 30px 0 50px 0;
 }
 
-body::selection{
+body::selection {
     background-color: black;
     color: yellow;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.logoName {
+    margin-top: 10px;
+    color: blue;
+}
+
+.mainHeading{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    display: inline;
 }
