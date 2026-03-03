@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -149,7 +149,6 @@ nav input::placeholder {
 }
 
 .logo-bg {
-    background-color: black;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -274,7 +273,7 @@ nav input::placeholder {
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.answer-o{
+.answer-o {
     padding: 10px;
     width: 100%;
     white-space: normal;
@@ -358,12 +357,28 @@ nav input::placeholder {
 }
 
 
-.answer a{
+.answer a {
     color: white;
     text-decoration: none;
 }
 
-body::selection{
+body::selection {
     background-color: black;
     color: yellow;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.logoName {
+    margin-top: 10px;
+    color: blue;
+}
+.mainHeading{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    display: inline;
 }
