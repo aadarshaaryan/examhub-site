@@ -2,11 +2,61 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Learn with ExamHub</title>
+
+    <meta name="description"
+        content="Learn page of ExamHub provides structured mock tests and exam preparation resources for competitive exams in India. Prepare smarter with organized study tools.">
+
+    <meta name="author" content="Aadarsh Aaryan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://examhub-site.vercel.app/learn.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="ExamHubLogo.svg" type="image/svg+xml">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#06B6D4">
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ExamHub – Smart Mock Tests for Competitive Exams">
+    <meta property="og:description" content="Access structured mock tests and exam preparation resources with ExamHub.">
+    <meta property="og:url" content="https://examhub-site.vercel.app/learn.html">
+    <meta property="og:image" content="https://examhub-site.vercel.app/ExamHubOG.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ExamHub – Smart Mock Tests">
+    <meta name="twitter:description" content="Prepare smarter with structured mock tests and study tools.">
+    <meta name="twitter:image" content="https://examhub-site.vercel.app/ExamHubOG.png">
+
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "EducationalOrganization",
+                "name": "ExamHub",
+                "url": "https://examhub-site.vercel.app/",
+                "logo": "https://examhub-site.vercel.app/ExamHubLogo.svg",
+                "founder": {
+    "@type": "Person",
+    "name": "Aadarsh Aaryan"
+  },
+  "description": "ExamHub provides mock tests and structured exam preparation resources for competitive exams in India."
+}
+</script>
     <link rel="stylesheet" href="learn.css">
-</head> 
+</head>
 
 <body>
     <nav>
@@ -15,9 +65,11 @@
                 <div class="menu-item">
                     <span class="bg-2">
                         <span class="icon-2">
-                            <div class="logo-bg"><img class="Img-icon" src="Group 1.svg"></div>
+                            <div class="logo-bg"><img class="Img-icon logo" src="ExamHubLogo.svg"></div>
                         </span>
-                        <span class="text2">ExamHub</span>
+                        <span class="text2 logoName">
+                            <h1 class="mainHeading">ExamHub</h1>
+                        </span>
                     </span>
                 </div>
             </li>
@@ -123,10 +175,10 @@
                                 <button class="enrollbtn">Enroll</button>
                             </div>
                             <div class="answer">
-                                <a href="DMMT.html">
+                                <a href="diploma-mixed-mock-test.html">
                                     <div class="answer-o">Mixed Mock Tests</div>
                                 </a>
-                                <a href="DPYQBT.html">
+                                <a href="diploma-pyq-based-test.html">
                                     <div class="answer-o">Previous Year Questions Based Tests</div>
                                 </a>
                                 <!-- <div class="answer-o">Real Exam Simulation</div>
@@ -308,7 +360,7 @@
             </div>
         </section>
     </main>
-    <script src="learn.js"></script>
+    <script src="learn.js" defer></script>
 </body>
 
 </html>
