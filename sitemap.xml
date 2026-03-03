@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://examhub-site.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://examhub-site.vercel.app/learn.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-mixed-mock-test.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-pyq-based-test.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-pyq-based-mixedmocktest.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-pyq-based-test-chemistry.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-pyq-based-test-math.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://examhub-site.vercel.app/diploma-pyq-based-test-physics.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
