@@ -18,7 +18,7 @@
   
   <url>
     <loc>https://examhub-site.vercel.app/diploma-pyq-based-mixedmocktest.html</loc>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
  <url>
@@ -30,6 +30,7 @@
     <loc>https://examhub-site.vercel.app/diploma-pyq-based-test-math.html</loc>
     <priority>0.7</priority>
   </url>
+  
   <url>
     <loc>https://examhub-site.vercel.app/diploma-pyq-based-test-physics.html</loc>
     <priority>0.7</priority>
@@ -37,8 +38,7 @@
 
   <url>
     <loc>https://examhub-site.vercel.app/diploma-pyq-based-test.html</loc>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
 
 </urlset>
